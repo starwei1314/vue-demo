@@ -6,6 +6,8 @@ import router from './router'
 //引入vue-resource发送请求
 import VueResource from "vue-resource"
 Vue.use(VueResource)
+//修改接口的根目录
+Vue.http.options.root = 'http://www.lovegf.cn:8899/api';
 
 //导入mint-ui组件
 import MintUi from "mint-ui"
@@ -20,6 +22,16 @@ import './libs/mui/css/icons-extra.css'
 
 Vue.config.productionTip = false
 
+//引入全局的moment
+import moment from "moment"
+//定义过滤器
+Vue.filter('dataFormat',(dataStr,pattern="YY-MM-DD HH:mm:ss")=>{
+  return moment(dataStr).format(pattern)
+})
+
+//由于评论组件很多页面都已经用到则抽离为公共组件以待使用
+import commet from "./components/commet.vue"
+Vue.component("commet",commet)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

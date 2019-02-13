@@ -8,7 +8,9 @@ import home from '../pages/home'
 import vip from '../pages/vip'
 import shopcar from '../pages/shopcar'
 import search from '../pages/search'
-
+import newsList from "../pages/newslist"
+import newsInfo from "../pages/newsInfo"
+ 
 
 Vue.use(Router)
 
@@ -27,6 +29,12 @@ export default new Router({
       path:"/shopcar",component:shopcar
     },
     {path:"/search",component:search
+  },
+  {
+    path:"/home/newsList",component:newsList
+  },
+  {
+    path:"/home/newsInfo/:id",component:newsInfo
   }
 
     // {
