@@ -10,6 +10,8 @@ import shopcar from '../pages/shopcar'
 import search from '../pages/search'
 import newsList from "../pages/newslist"
 import newsInfo from "../pages/newsInfo"
+import photoList from "../pages/photoList"
+import photoInfo from "../pages/photoInfo"
  
 
 Vue.use(Router)
@@ -35,7 +37,10 @@ export default new Router({
   },
   {
     path:"/home/newsInfo/:id",component:newsInfo
-  }
+  },
+  {path:"/home/photoList",component:photoList
+},
+{path:"/home/photoInfo/:id",component:photoInfo}
 
     // {
     //   path: '/',

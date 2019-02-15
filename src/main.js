@@ -25,7 +25,7 @@ Vue.config.productionTip = false
 //引入全局的moment
 import moment from "moment"
 //定义过滤器
-Vue.filter('dataFormat',(dataStr,pattern="YY-MM-DD HH:mm:ss")=>{
+Vue.filter('dateFormat',(dataStr,pattern="YY-MM-DD HH:mm:ss")=>{
   return moment(dataStr).format(pattern)
 })
 
