@@ -22,6 +22,9 @@ import './libs/mui/css/icons-extra.css'
 
 Vue.config.productionTip = false
 
+//引入图片预览
+import VuePreview from 'vue-pic-preview'
+Vue.use(VuePreview)
 //引入全局的moment
 import moment from "moment"
 //定义过滤器
