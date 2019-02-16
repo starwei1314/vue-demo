@@ -12,7 +12,10 @@ import newsList from "../pages/newslist"
 import newsInfo from "../pages/newsInfo"
 import photoList from "../pages/photoList"
 import photoInfo from "../pages/photoInfo"
- 
+import goodsList from "../pages/goodslist"
+import goodsInfo from "../pages/goodsInfo" 
+import goodsDesc from "../pages/goodsDesc"
+  
 
 Vue.use(Router)
 
@@ -40,7 +43,17 @@ export default new Router({
   },
   {path:"/home/photoList",component:photoList
 },
-{path:"/home/photoInfo/:id",component:photoInfo}
+{path:"/home/photoInfo/:id",component:photoInfo
+},
+{
+  path:"/home/goodsList",component:goodsList
+},
+{
+  path:"/home/goodsInfo/:id",component:goodsInfo
+},
+{
+  path:"/home/goodsDesc/:id",component:goodsDesc
+}
 
     // {
     //   path: '/',
