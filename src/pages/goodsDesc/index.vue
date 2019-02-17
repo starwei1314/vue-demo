@@ -24,6 +24,10 @@ export default {
     }
 }
 </script>
-<style lang=less scoped>
-
+<style lang=less >
+    .goodsDesc{
+        .gomeImgLoad{
+            width:100%
+        }
+    }
 </style>

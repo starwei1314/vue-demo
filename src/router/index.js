@@ -15,7 +15,7 @@ import photoInfo from "../pages/photoInfo"
 import goodsList from "../pages/goodslist"
 import goodsInfo from "../pages/goodsInfo" 
 import goodsDesc from "../pages/goodsDesc"
-  
+import goodsCommets from "../pages/goodsCommets"
 
 Vue.use(Router)
 
@@ -53,6 +53,9 @@ export default new Router({
 },
 {
   path:"/home/goodsDesc/:id",component:goodsDesc
+},
+{
+  path:"/home/goodsCommets/:id",component:goodsCommets
 }
 
     // {
